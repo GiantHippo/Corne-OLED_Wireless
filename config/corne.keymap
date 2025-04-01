@@ -22,7 +22,7 @@
 
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E     &kp R      &kp T    &kp Y  &kp U      &kp I      &kp O    &kp P     &kp BSPC
-&kp RCTRL  &kp A  &kp S  &kp D     &kp F      &kp G    &kp H  &kp J      &kp K      &kp L    &kp SEMI  &kp ENTER
+&kp LCTRL  &kp A  &kp S  &kp D     &kp F      &kp G    &kp H  &kp J      &kp K      &kp L    &kp SEMI  &kp ENTER
 &kp LSHFT  &kp Z  &kp X  &kp C     &kp V      &kp B    &kp N  &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
                          &kp LGUI  &kp SPACE  &mo 1    &mo 2  &kp ENTER  &kp RALT
             >;
@@ -51,10 +51,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans  &trans          &mmv MOVE_UP    &trans           &trans       &trans     &trans     &trans    &trans    &trans    &kp BSPC
-&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans       &kp COLON  &kp LPAR   &kp RPAR  &kp LBKT  &kp RBKT  &trans
-&trans  &trans  &mkp MB1        &mkp MCLK       &mkp MB2         &trans       &kp UNDER  &kp MINUS  &kp PLUS  &kp STAR  &trans    &trans
-                                &kp LGUI        &trans           &kp SPACE    &kp RET    &trans     &kp RALT
+&trans  &trans  &trans          &mmv MOVE_UP    &trans           &kp C_VOLUME_UP      &trans     &trans     &trans    &trans    &trans    &kp BSPC
+&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp C_VOLUME_DOWN    &kp COLON  &kp LPAR   &kp RPAR  &kp LBKT  &kp RBKT  &trans
+&trans  &trans  &mkp MB1        &mkp MCLK       &mkp MB2         &kp F11              &kp UNDER  &kp MINUS  &kp PLUS  &kp STAR  &trans    &trans
+                                &kp LGUI        &trans           &kp SPACE            &kp RET    &trans     &kp RALT
             >;
         };
     };
