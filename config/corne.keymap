@@ -80,10 +80,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&cloze_new  &cloze_same  &kp N7  &kp N8  &kp N9  &kp N0       &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END    &trans  &trans
-&trans      &kp N0       &kp N4  &kp N5  &kp N6  &kp COMMA    &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT  &trans  &kp SQT
-&trans      &snipshot    &kp N1  &kp N2  &kp N3  &kp DOT      &trans         &trans    &trans        &trans     &trans  &kp DEL
-                                 &trans  &trans  &mo 2        &mo 2          &trans    &trans
+&cloze_new  &cloze_same  &kp N7  &kp N8  &kp N9  &kp N0       &kp PAGE_UP    &kp HOME   &kp UP_ARROW  &kp END       &trans  &trans
+&trans      &kp N0       &kp N4  &kp N5  &kp N6  &kp COMMA    &kp PAGE_DOWN  &kp LEFT   &kp DOWN      &kp RIGHT     &trans  &kp SQT
+&trans      &snipshot    &kp N1  &kp N2  &kp N3  &kp DOT      &kp UNDER      &kp MINUS  &kp PLUS      &kp ASTERISK  &trans  &kp DEL
+                                 &trans  &trans  &mo 2        &mo 2          &trans     &trans
             >;
         };
 
@@ -97,7 +97,7 @@
             bindings = <
 &trans  &bt BT_CLR    &trans          &mmv MOVE_UP    &trans           &kp C_VOLUME_UP      &trans     &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans    &trans    &trans
 &trans  &bt BT_SEL 1  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp C_VOLUME_DOWN    &kp COLON  &kp LPAR        &kp RPAR         &kp LBKT  &kp RBKT  &trans
-&trans  &bt BT_SEL 2  &mkp MB1        &mkp MCLK       &mkp MB2         &kp F11              &kp UNDER  &kp MINUS       &kp PLUS         &kp STAR  &trans    &trans
+&trans  &bt BT_SEL 2  &mkp MB1        &mkp MCLK       &mkp MB2         &kp F11              &trans     &trans          &trans           &trans    &trans    &trans
                                       &trans          &trans           &trans               &trans     &trans          &trans
             >;
         };
