@@ -57,19 +57,9 @@
     combos {
         compatible = "zmk,combos";
 
-        tabCombo {
-            bindings = <&kp TAB>;
-            key-positions = <25 26>;
-        };
-
-        enterCombo {
-            bindings = <&kp ENTER>;
-            key-positions = <19 20 21>;
-        };
-
-        escCombo {
-            bindings = <&kp ESCAPE>;
-            key-positions = <1 2>;
+        delCombo {
+            bindings = <&kp DEL>;
+            key-positions = <10 11>;
         };
     };
 
@@ -84,10 +74,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&trans  &kp Q  &kp W  &kp E                   &kp R        &kp T             &kp Y      &kp U        &kp I            &kp O    &kp P     &trans
-&trans  &kp A  &kp S  &kp D                   &kp F        &kp G             &kp H      &kp J        &kp K            &kp L    &kp SEMI  &trans
-&trans  &kp Z  &kp X  &kp C                   &kp V        &kp B             &kp N      &kp M        &kp COMMA        &kp DOT  &kp FSLH  &trans
-                      &mt LEFT_WIN BACKSPACE  &lt 1 SPACE  &kp LEFT_SHIFT    &kp RCTRL  &lt 1 ENTER  &mt RALT DELETE
+&kp TAB         &kp Q  &kp W  &kp E         &kp R      &kp T    &kp Y  &kp U      &kp I      &kp O    &kp P     &kp BACKSPACE
+&kp RCTRL       &kp A  &kp S  &kp D         &kp F      &kp G    &kp H  &kp J      &kp K      &kp L    &kp SEMI  &kp ENTER
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C         &kp V      &kp B    &kp N  &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp ESCAPE
+                              &kp LEFT_WIN  &kp SPACE  &mo 1    &mo 1  &kp ENTER  &kp RALT
             >;
         };
 
@@ -99,10 +89,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &cloze_same  &kp N7  &kp N8  &kp N9  &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp HOME   &kp UP_ARROW  &kp END       &kp PAGE_UP    &trans
-&trans  &trans       &kp N4  &kp N5  &kp N6  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp LEFT   &kp DOWN      &kp RIGHT     &kp PAGE_DOWN  &trans
-&trans  &kp N0       &kp N1  &kp N2  &kp N3  &kp DOT                 &kp KP_EQUAL           &kp MINUS  &kp PLUS      &kp ASTERISK  &trans         &trans
-                             &trans  &mo 2   &trans                  &trans                 &mo 2      &trans
+&trans  &cloze_same       &kp N7  &kp N8  &kp N9  &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp HOME   &kp UP_ARROW  &kp END       &kp PAGE_UP    &trans
+&trans  &kp SINGLE_QUOTE  &kp N4  &kp N5  &kp N6  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp LEFT   &kp DOWN      &kp RIGHT     &kp PAGE_DOWN  &trans
+&trans  &kp N0            &kp N1  &kp N2  &kp N3  &kp DOT                 &kp KP_EQUAL           &kp MINUS  &kp PLUS      &kp ASTERISK  &trans         &trans
+                                  &trans  &trans  &mo 2                   &mo 2                  &trans     &trans
             >;
         };
 
