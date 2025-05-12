@@ -75,7 +75,7 @@
 
         altCombo {
             bindings = <&kp RALT>;
-            key-positions = <25 26>;
+            key-positions = <38 37>;
         };
 
         enterCombo {
